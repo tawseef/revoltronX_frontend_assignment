@@ -1,0 +1,45 @@
+.cardWrapper {
+  margin: 10px;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid brown;
+  border-radius: 10px;
+}
+
+.cardTitle {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.infoSection {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.heading {
+  margin-right: 5px;
+  font-weight: 600;
+}
+
+@media (max-width: 426px) {
+  .cardWrapper {
+    margin: 5px;
+    padding: 8px;
+    border-radius: 5px;
+  }
+
+  .cardTitle {
+    font-size: medium;
+  }
+
+  .infoSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heading {
+    margin-right: 0;
+    font-size: small;
+  }
+}
