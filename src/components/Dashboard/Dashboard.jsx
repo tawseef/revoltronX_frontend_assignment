@@ -8,7 +8,7 @@ function Dashboard() {
 
   useEffect(() => {
     fetch(
-      "https://newsapi.org/v2/top-headlines?country=us&apiKey=b8a01f95a3ce49709aa3b3dcd797da85"
+      "https://revoltronx-isjq.onrender.com/v1/getdata"
     )
       .then((response) => {
         if (!response.ok) throw new Error("Network response was not ok");
@@ -21,8 +21,6 @@ function Dashboard() {
         console.error("There was a problem with the fetch operation:", error);
       });
   }, []);
-
-  console.log(headlines);
 
   return (
     <div>
