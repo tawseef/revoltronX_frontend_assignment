@@ -7,9 +7,7 @@ function Dashboard() {
   const [headlines, setHeadlines] = useState([]);
 
   useEffect(() => {
-    fetch(
-      "https://revoltronx-isjq.onrender.com/v1/getdata"
-    )
+    fetch("https://revoltronx-isjq.onrender.com/v1/getdata")
       .then((response) => {
         if (!response.ok) throw new Error("Network response was not ok");
         return response.json();
